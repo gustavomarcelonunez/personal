@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap');
+
+
+.home {
+  padding: 2rem;
+  background: linear-gradient(to bottom, #0b0a13, #000a03, #002b0a);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  color: #ffffff;
+  font-family: 'Rajdhani';
+}
+
+.left {
+  flex: 1;
+  text-align: center;
+}
+
+.right {
+  flex: 2;
+}
+
+.greeting {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--color-neon-green); /* Cyberpunk violet */
+  text-shadow: 0 0 10px #21d07a, 0 0 20px #00ff00;
+  text-align: center; /* Centramos verticalmente */
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--color-purple); /* Neón verde */
+  text-shadow: 0 0 10px #a020f0, 0 0 20px #ff00ff;
+  text-align: center; /* Centramos verticalmente */
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left,
+  .right {
+    flex: 1;
+  }
+}

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Source+Code+Pro:wght@400;600&display=swap');
+
+:root {
+  --font-primary: 'Orbitron', sans-serif; /* Fuente futurista */
+  --font-secondary: 'Source Code Pro', monospace; /* Estilo código */
+  --color-bg: #1a1a2e; /* Azul oscuro */
+  --color-purple: #f544fc; /* Púrpura eléctrico */
+  --color-neon-green: #00ce67; /* Verde neón */
+  --color-neon-blue: #5fa0fe; /* Azul neón */
+  --color-white: #ffffff;
+}
+
+.header {
+  background-color: var(--color-bg);
+  color: var(--color-white);
+  padding: 10px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: var(--font-primary);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-neon-green);
+  text-transform: uppercase;
+  text-shadow: 0 0 10px var(--color-neon-green), 0 0 20px var(--color-neon-green);
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.navLink {
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  transition: color 0.3s ease, border-color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navLink:hover {
+  color: var(--color-purple);
+  border-color: var(--color-purple);
+  text-shadow: 0 0 10px var(--color-purple), 0 0 20px var(--color-purple);
+}
+
+.navLink:active {
+  color: var(--color-neon-green);
+  border-color: var(--color-neon-green);
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+}
